@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:orderInCategory="100"
+        android:title="@string/app_name"
+        android:hint="@string/search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="collapseActionView|ifRoom"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+    <item
+        android:id="@+id/sortBtn"
+        android:orderInCategory="101"
+        android:title="@string/app_name"
+        android:hint="@string/sort"
+        android:icon="@android:drawable/ic_menu_sort_alphabetically"
+        app:showAsAction="collapseActionView|ifRoom">
+        <menu>
+            <group
+                android:id="@+id/filter"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/aToZ"
+                    android:title="By Name(A TO Z)" />
+                <item
+                    android:id="@+id/ZtoA"
+                    android:title="By Name(Z TO A)" />
+                <item
+                    android:id="@+id/firstToLast"
+                    android:title="Date(First To Last)" />
+                <item
+                    android:id="@+id/lastToFirst"
+                    android:title="Date(Last To First)" />
+            </group>
+        </menu>
+    </item>
+</menu>

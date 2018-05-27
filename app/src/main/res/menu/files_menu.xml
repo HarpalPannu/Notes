@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_add_favourite"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="@string/add_files" />
+    <item
+        android:id="@+id/Save"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="101"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/save" />
+
+
+</menu>
